@@ -1,0 +1,191 @@
+@font-face {
+  font-family: 'Arial1';
+  src: url('fonts/ARIAL.TTF')
+}
+
+:root {
+  --primary: #282A35;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+html,
+body {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  font-family: Arial, Arial1;
+}
+
+svg {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  overflow: hidden;
+  /*background-color: black;*/
+}
+
+.navbar-brand {
+  font-size: x-large;
+}
+
+.doc-control-section {
+  /* width: fit-content; */
+}
+
+.doc-control-section input,
+.doc-control-section select {
+  width: 80px;
+}
+
+/* Start main-side style */
+.main-side {
+  border: 2px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-side .table-container {
+  position: relative;
+}
+
+.main-side .table-container .tb-resize-bottom-cursor {
+  position: absolute;
+  z-index: 20;
+  width: 10px;
+  height: 10px;
+  right: -10px;
+  cursor: nwse-resize;
+  background-color: #80808082;
+}
+
+.main-side .table-container .tb-resize-top-cursor {
+  position: absolute;
+  z-index: 20;
+  width: 10px;
+  height: 10px;
+  left: -10px;
+  top: -10px;
+  cursor: nwse-resize;
+  background-color: #80808082;
+}
+
+.main-side div.doc-container {
+  position: absolute;
+  width: calc(100% - 23px);
+  z-index: 5;
+}
+
+.main-side .table {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  font-size: 15px !important;
+  line-height: 0;
+}
+
+table {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  font-size: 15px !important;
+  line-height: 0;
+  font-weight: 600;
+}
+
+.setting-table tr {
+  max-height: 36px !important;
+  height: 36px !important;
+}
+
+.setting-table th {
+  font-weight: 900;
+}
+
+.setting-table tr,
+.setting-table td,
+.setting-table th {
+  border: solid 2px;
+}
+
+.main-side .table>:not(caption)>*>* {
+  padding: 0;
+  vertical-align: middle;
+}
+
+#doc-background {
+  opacity: 0.9;
+}
+
+.col-resizer {
+  cursor: col-resize;
+  user-select: none;
+
+}
+
+.row-resizer {
+  cursor: row-resize;
+  user-select: none;
+}
+
+.selected-td {
+  background-color: #cdcdcd !important;
+}
+
+/* end main-side style */
+
+/* Start demo code style */
+.demo-code {
+  width: 100%;
+  /* background-color: rgb(30, 30, 30); */
+  height: 550px;
+}
+
+.demo-code .block-markdown__pre {
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.source_code {
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+input,
+select {
+  width: 50px !important;
+}
+
+#px_grid {
+  position: absolute;
+  width: 391px;
+  height:590px;
+  z-index: 1;
+  margin-left:-12px;
+  /* border: solid 1px black; */
+}
+#px_grid tr td{
+  border: dotted 1px;
+}
+#px_grid tr {
+  height:100px;
+}
+#px_grid td {
+  width:130px;
+}
+/* end demo code style */

@@ -1,0 +1,2 @@
+https://github.com/1milligram/html-dom/blob/master/public/demo/resize-columns-of-a-table/index.html
+http://tablemaker.great-site.net/
